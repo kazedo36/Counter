@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Counter</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+   <div class="container">
+    <h1>The Counter</h1>
+    <h3>count:<span id="number">0</span></h3>
+    <button id="add" onclick="counter()">+</button>
+    <button id="reset" onclick="reset()">reset</button>
+   </div>
+
+    <footer>
+        <p>project by, sulaiman</p>
+    </footer>
+    
+   <script>
+    // function to increment the counter
+    let count = 0;
+    function counter(){
+        count++;
+        let counter = document.querySelector("#number");
+        counter.innerText = count;
+    }
+
+    // function to reset the counter
+    function reset(){
+        count = 0;
+        let counter = document.querySelector("#number");
+        counter.innerText = count;
+    }
+   </script>
+    
+</body>
+</html>
